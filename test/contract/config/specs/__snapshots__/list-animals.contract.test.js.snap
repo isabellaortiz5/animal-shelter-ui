@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Animal Service When a request to add an animal is made Animal registered 1`] = `
+Object {
+  "breed": "Bengali",
+  "gender": "Male",
+  "name": "Joy",
+  "vaccinated": true,
+}
+`;
+
+exports[`Animal Service When a request to delete an animal is made Animal deleted 1`] = `""`;
+
+exports[`Animal Service When a request to edit an animal is made Animal edited 1`] = `
+Object {
+  "breed": "Criollo",
+  "gender": "Male",
+  "id": 1,
+  "name": "Joy",
+  "vaccinated": true,
+  "vaccines": Array [
+    "rabia",
+  ],
+}
+`;
+
 exports[`Animal Service When a request to list all animals is made should return the correct data 1`] = `
 Array [
   Object {
@@ -9,4 +33,13 @@ Array [
     "vaccinated": true,
   },
 ]
+`;
+
+exports[`Animal Service When a request to list an animal is made should list and animal 1`] = `
+Object {
+  "breed": "Criollo",
+  "gender": "Male",
+  "name": "Joy",
+  "vaccinated": true,
+}
 `;
